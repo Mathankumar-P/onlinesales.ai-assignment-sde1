@@ -1,6 +1,6 @@
 # OnlineSales.ai-Assignemt-SDE1
 
-Before getting started make sure to setup devlopment environment.
+Before getting started make sure to set up development environment.
 
 
 ## Environment Setup
