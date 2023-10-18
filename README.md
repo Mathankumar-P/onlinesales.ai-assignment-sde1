@@ -43,13 +43,13 @@ Open IntelliJ IDEA.
 For Task-1, I have taken the example of rolling dice events
 
 ``` bash
-- for every api request ProbabilityController diceRoll method invokes the ProbabilityService which provide the random probability for each request.
-- then it invokes the rollDice method, which will randomly select and add the values in hashmap for a max event count times and returns as a response.
+- for every API request ProbabilityController diceRoll method invokes the ProbabilityService which provides the random probability for each request.
+- then it invokes the rollDice method, which will randomly select and add the values in the hashmap for a max event count times and return as a response.
 ```
 
 Postman
 ``` bash
-Mehtod: GET
+Method: GET
 Api Link : http://localhost:8080/api/diceRoll?eventCount=500
 
 Example output for Event count 500 :
@@ -63,7 +63,7 @@ Example output for Event count 500 :
     "6": 8
 }
 
-Manipulate the eventCount details. based on the event count the occurences distributes
+Manipulate the eventCount details. based on the event count the occurrences distributes
 ```
 
 
@@ -71,19 +71,21 @@ Manipulate the eventCount details. based on the event count the occurences distr
 
 
 ```bash
-Web api used to evaluate the math Expression
+Web API used to evaluate the math Expression
 api.mathjs.org
 example => http://api.mathjs.org/v4/?expr=2*(7-3)
 
-- MathExperssion controller using CompletableFuture invoked the the evaluate expression method inside service, whice makes the web api call using RestTemplate and Stores inside the List of CompletableFuture<string>
-- Now from the returend values the expression is exracted and using stringbuilder it is converted ino string and provided as a response
+- MathExperssion controller using CompletableFuture invoked the evaluate expression method inside service,
+which makes the web API call using RestTemplate and Stores inside the List of CompletableFuture<string>
+- Now from the returned values the expression is extracted and using StringBuilder it is converted into a string
+and provided as a response
 
 ```
 Postman
 ```bash
-Method : POST
+Method: POST
 Link => http://localhost:8080/api/evaluate
-in request body add raw JSON format
+in the request body add raw JSON format
 ----------------------------
 [ "2 * 4 * 4",
 "5 / (7 - 5)",
@@ -100,10 +102,10 @@ sqrt(-3^2 - 4^2) => 5i
 
 Concurrency
 ```bash
-Used CompletableFuture for concurrent requests allows us to perform multiple operations concurrently without blocking the main thread. 
-This significantly improves the overall performance and responsiveness of application.
+Using CompletableFuture for concurrent requests allows us to perform multiple operations concurrently without blocking the main thread. 
+This significantly improves the overall performance and responsiveness of the application.
 
-main features of CompletableFuture
+The main features of CompletableFuture
 -Asynchronous Execution
 -Non-Blocking
 -Parallelism
@@ -112,7 +114,7 @@ main features of CompletableFuture
 
 added Test3.py with changed code
 
-```pyhton
+```python
 def compute(n):
     if n < 10:
         out = n ** 2
