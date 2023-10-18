@@ -28,7 +28,7 @@ Import Project into IntelliJ IDEA:
 ```bash
 Open IntelliJ IDEA.
 
-- Click on "Open" and navigate to the root folder of your project.
+- Click on "Open" and navigate to the root folder.
 - Select the pom.xml file and click "Open" to import the project and Build the Project:
 - In IntelliJ IDEA, click on "Build" in the top menu.
 - Select "Build Project" to build your Maven project. Run the Application:
